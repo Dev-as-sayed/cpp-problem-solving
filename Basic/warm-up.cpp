@@ -6,7 +6,8 @@
  * ==================================================
 */
 
-
+/**
+ * 
 
 #include<iostream>
 
@@ -28,11 +29,38 @@ int main() {
 }
 
 
+ */
+
+
 /**
+ * ==================================================
  * 2. Positive, Negative, or Zero
  *  Classify the number
  * ==================================================
  */
+
+ /**
+ #include<iostream>
+
+ int main (){
+
+    int providedNumber;
+
+    std::cout << "which number you want to varify positive of negative"<<std::endl;
+    std::cin>> providedNumber;
+    if (providedNumber > 0){
+        std::cout << "your provided number is positive" << std::endl;
+    } else if (providedNumber < 0){
+        std::cout << "your provided number is negative" << std::endl;
+    } else{
+        std::cout << "your provided number is zro" << std::endl;
+    }
+    
+    return 0;
+
+ }
+ */
+
 
 /**
  * ==================================================
@@ -41,6 +69,26 @@ int main() {
  * ==================================================
  */
 
+ /**
+ #include <iostream>
+
+ int main (){
+    int a;
+    int b;
+
+    std::cout<< "give me value of a \n";
+    std::cin >> a;
+    std::cout<< "give me value of b \n";
+    std::cin >> b;
+
+    if (a > b){
+        std::cout << "a leargest from b";
+    }
+    std::cout << "a smaller from b";
+
+ }
+
+ */
 
 
 /**
@@ -50,10 +98,24 @@ int main() {
  * ==================================================
  */
 
-/**
- * ==================================================
- * 5. Swap Two Numbers
- *  Without using a third variable
- * ==================================================
-*/
+ #include<iostream>
+
+ int main (){
+    
+    int numsCollection[10] = {1,34, 56, 32, 64, 96, 43,54,21,23};
+
+    int leargestNumber=numsCollection[0];
+    for (int i = 0; i < 10; i++){
+        if (numsCollection[i] > leargestNumber){
+            leargestNumber = numsCollection[i];
+            std::cout<< "update the new leargest number \n" << numsCollection[i];
+        }
+        std::cout<< "current leargst number is "<< numsCollection[i] <<std::endl;
+    }
+    std::cout << "Final largest number is: " << leargestNumber << std::endl;
+    
+
+    return 0;
+ }
+
 
